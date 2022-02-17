@@ -32,7 +32,6 @@
         font-weight: 700;
         font-size: 12px;
         line-height: 16px;
-        text-align: right;
         letter-spacing: 0.1em;
         text-transform: uppercase;
         transition: all 0.2s ease;
@@ -248,10 +247,13 @@
     .nav__item {
         margin-bottom: 30px;
     }
+    .nav__item:not(:last-child) {
+        margin-right: 0;
+    }
 
     .nav__link {
         color: $text-color;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .header__mode {
