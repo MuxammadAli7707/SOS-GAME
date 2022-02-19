@@ -1,0 +1,69 @@
+.social {
+    &__list {
+        @include list-style();
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 32px;
+    }
+
+    &__link {
+        font-family: $font-family;
+        @include link();
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        transition: all 0.2s ease;
+        color: $text-color;
+    }
+
+    &__item:hover .social__link {
+        color: $hover;
+        transition: all 0.2s ease;
+    }
+}
+
+.social__icons {
+    @include list-style();
+}
+
+.social__icon:not(:last-child) {
+    margin-right: 50px;
+}
+.social__bx {
+    font-size: 25px;
+    color: $text-color;
+    transition: all 0.4s ease;
+}
+
+.social__bx:hover {
+    color: #ff1313;
+    transition: all 0.4s ease;
+}
+
+.social__main {
+    border-bottom: 1px solid #848585;
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 992px) {
+    .social__main {
+        flex-direction: column;
+    }
+    .social__list {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .social__list {
+        flex-direction: column;
+    }
+    .social__item:not(:last-child) {
+        margin-right: 0;
+    }
+}

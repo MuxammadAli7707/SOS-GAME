@@ -2,8 +2,9 @@
     background-image: url('../../imgs/hero-back.png');
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
     background-size: 100% 100vh;
+    position: relative;
+
 }
 
 .hero__main {
@@ -73,6 +74,9 @@
         height: auto;
     }
 
+    .hero__main {
+        flex-direction: column;
+    }
     .hero__text {
         left: 0;
     }

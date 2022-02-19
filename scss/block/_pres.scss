@@ -1,0 +1,146 @@
+#pres {
+    background-image: url('../../imgs/bg-game-pres.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.pres__main {
+    padding-top: 160px;
+}
+
+.pres__entry {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: $text-color;
+    margin-bottom: 8px;
+}
+.pres__title {
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-bottom: 50px;
+}
+.pres__txt {
+    font-family: $font-family;
+    font-size: 18px;
+    line-height: 22px;
+    color: $text-color;
+    margin-bottom: 37px;
+}
+.pres__btn {
+    font-family: $font-family;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #1a1917;
+    border: none;
+    background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+    border-radius: 4px;
+    padding: 19px 35px;
+    border: 1px solid #f3af34;
+    transition: all 1s ease;
+}
+.pres__btn:hover {
+    background: linear-gradient(#1a1917);
+    border: 1px solid #f3af34;
+    color: $text-color;
+    transition: all 1s ease;
+}
+
+.pres__list {
+    @include list-style();
+}
+
+.pres__item {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 15px;
+}
+.pres__item:nth-child(odd) {
+    position: relative;
+    left: 30%;
+}
+.pres__img {
+    margin-right: 22px;
+}
+.pres__user {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: $color;
+}
+
+.pres__job {
+    font-family: $font-family;
+    font-size: 18px;
+    line-height: 22px;
+    color: $text-color;
+    opacity: 0.5;
+}
+.pres__twit {
+    color: $text-color;
+    opacity: 0.3;
+    font-size: 25px;
+}
+.pres__text {
+    font-family: $font-family;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 22px;
+    margin-bottom: 8px;
+    color: $text-color;
+}
+.pres__date {
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 19px;
+    color: $text-color;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1200px) {
+    .pres__item:nth-child(odd) {
+        position: static;
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .pres__main {
+        flex-direction: column;
+    }
+    .pres__btn {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .pres__item {
+        width: 100%;
+    }
+    .pres__entry {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .pres__title {
+        font-size: 33px;
+        line-height: 33px;
+        margin-bottom: 20px;
+    }
+    .pres__txt {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: justify;
+    }
+    .pres__button {
+        text-align: center;
+    }
+}

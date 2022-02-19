@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Bebas Neue', cursive;
-  background-color: #000;
+  background-color: #080a0b;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,4 +28,26 @@ body {
 }
 html {
   scroll-behavior: smooth;
+}
+
+.up {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  padding: 7px;
+  font-size: 30px;
+  background-color: #0c0c0c;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #ffb548;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+  z-index: 50;
+  opacity: 0;
+}
+
+.up:hover {
+  background-color: #ffb548;
+  transition: all 0.3s linear;
 }

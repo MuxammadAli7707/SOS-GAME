@@ -1,0 +1,101 @@
+#news {
+    background-color: #080a0b;
+    margin-bottom: 50px;
+}
+.news__main {
+    padding-top: 100px;
+}
+.news__back {
+    background-image: url(../../imgs/game-news.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 445px;
+    height: 694px;
+}
+
+.news__entry {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: $text-color;
+    margin-bottom: 8px;
+}
+.news__title {
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-bottom: 40px;
+}
+.news__text {
+    font-family: $font-family;
+    font-size: 18px;
+    line-height: 22px;
+    color: $text-color;
+    margin-bottom: 50px;
+}
+.news__email {
+    font-family: $font-family;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: none;
+    width: 50%;
+    height: 60px;
+    border-radius: 5px;
+    padding-left: 21px;
+    font-size: 14px;
+    line-height: 19px;
+    margin-right: 17px;
+}
+.news__email:focus {
+    outline: none;
+}
+.news__btn {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1a1917;
+    border: 1px solid $color;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 4px;
+    padding: 17px 70px;
+    margin-bottom: 50px;
+    font-family: $font-family;
+}
+.news__btn:hover {
+    background: linear-gradient(#080a0b);
+    color: $text-color;
+    transition: all 0.4s ease;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 85%;
+    }
+    .news__main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news__title {
+        font-size: 33px;
+        line-height: 33px;
+    }
+    .news__email {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .news__btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .news__back {
+        width: 346px;
+        height: 515px;
+    }
+}
