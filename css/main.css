@@ -1585,5 +1585,14 @@ html {
   .footer__item {
     margin-bottom: 20px;
   }
+  .up {
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer__text {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
